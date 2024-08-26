@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #8cc461;
+  font-family: "Roboto", sans-serif;
+}
+/* --------------------Top portion of the page --------------------------- */
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 30px;
+  left: 250px;
+  font-family: "Roboto", sans-serif;
+  width: 53%;
+  height: 16%;
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.topLeft {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+.topRight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topRight span {
+  height: 80%;
+  width: 35%;
+  background-color: white;
+  font-size: 0.8 rem;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+  text-align: center;
+  line-height: 1.4rem;
+  color: #656565;
+  font-weight: 600;
+}
+.topRight span p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+/* -----------------------lower portion buttons -------------------------------*/
+#btnRules {
+  width: 7%;
+  height: 5%;
+  border: 2px solid white;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 120px;
+  text-align: center;
+  border-radius: 7px;
+  background: transparent;
+  color: white;
+}
+#btnNext {
+  width: 7%;
+  height: 5%;
+  border: 2px solid white;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  text-align: center;
+  border-radius: 7px;
+  background: transparent;
+  color: white;
+}
+#cross {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  background: transparent;
+  border: none;
+  top: 227px;
+  right: 1px;
+  z-index: 1;
+  border-radius: 50%;
+  display: none;
+}
+
+.rules {
+  position: absolute;
+  right: 0px;
+  top: 220px;
+  height: 50%;
+  width: 18%;
+  display: none;
+}
+
+.container {
+  height: 30vh;
+  width: 50%;
+  /* border: 2px solid red; */
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  top: 160px;
+  left: 280px;
+}
+
+.btnScissor {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  /* border: 14px solid #bd00ff; */
+}
+.btnStone {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  /* border: 14px solid #bd00ff; */
+}
+.btnPaper {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  /* border: 14px solid #bd00ff; */
+}
+
+.class1 h1,
+.class3 h1 {
+  color: white;
+  font-size: 1rem;
+}
+.class1,
+.class3 {
+  width: 33%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#userChoose {
+  height: 2.4rem;
+  width: 1.9rem;
+}
+#compChoose {
+  height: 3rem;
+  width: 3rem;
+}
+#stone {
+  height: 2.4rem;
+  width: 2.9rem;
+}
+
+.btnPaper {
+  border: 14px solid #ffa943;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.btnStone {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border: 14px solid #0074b6;
+}
+.btnScissor {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border: 14px solid #bd00ff;
+}
+.class2 {
+  margin-top: 50px;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.class2 button {
+  height: 25px;
+  width: 105px;
+  background-color: white;
+  border: none;
+  text-align: center;
+  font-size: 0.6rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+#first {
+  color: white;
+  font-size: 30px;
+}
+#second {
+  color: white;
+  font-size: 20px;
+}
+.pulse {
+  position: absolute;
+  top: 270px;
+  left: 270px;
+  height: 250px;
+  width: 250px;
+  z-index: -1;
+}
+#pulse1 {
+  height: 62%;
+  width: 62%;
+  z-index: 1;
+  position: absolute;
+  top: 44px;
+  left: 48px;
+}
+#pulse2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+}
+#pulse3 {
+  height: 115%;
+  width: 115%;
+  position: absolute;
+  z-index: -3;
+  top: -20px;
+  left: -20px;
+}

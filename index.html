@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topSection">
+      <div class="topLeft">
+        <p>STONE</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+      <div class="topRight">
+        <span
+          >COMPUTER SCORE
+          <p id="compScore">0</p></span
+        >
+        <span
+          >YOUR SCORE
+          <p id="userScore">0</p></span
+        >
+      </div>
+    </div>
+    <button id="btn" onclick="showRules()">Rules</button>
+    <button id="cross" onclick="hideRules()"></button>
+    <img src="Img/Group 4.png" class="rules" id="imgRules" alt="" />
+    <img src="Img/Line 1.png" id="straightLine" alt="" />
+    <img src="Img/Line 2.png" id="rightLine" alt="" />
+    <img src="Img/Line 3.png" id="leftLine" alt="" />
+    <div class="lowerPart">
+      <button class="btn btnPaper" id="Paper">
+        <img src="Img/paper.png" id="paperImg" />
+      </button>
+      <button class="btn btnScissor" id="Scissor">
+        <img src="Img/scissors.png" id="scissorsImg" alt="" />
+      </button>
+      <button class="btn btnStone" id="Stone">
+        <img src="Img/stone.png" id="stoneImg" alt="" />
+      </button>
+    </div>
+    <script src="main.js"></script>
+    <script src="playerWin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #8cc461;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  height: 98vh;
+  width: 99vw;
+  text-align: center;
+}
+
+#btnRules {
+  width: 7%;
+  height: 5%;
+  border: 2px solid white;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  text-align: center;
+  border-radius: 7px;
+  background: transparent;
+  color: white;
+}
+.playAgain {
+  height: 25px;
+  width: 105px;
+  background-color: white;
+  border: none;
+  text-align: center;
+  font-size: 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  left: 570px;
+}
+h1 {
+  margin-top: 6rem;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+h3 {
+  color: white;
+  font-size: 1.8rem;
+}
+.stars {
+  z-index: -1;
+  position: relative;
+  top: 50px;
+  right: 10px;
+  height: 45%;
+  width: 35%;
+  animation: celebrate 3s ease-in-out infinite;
+}
+.Trophy {
+  z-index: 1;
+  position: absolute;
+  top: 120px;
+  left: 550px;
+  height: 30%;
+  width: 15%;
+}
+@keyframes celebrate {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}

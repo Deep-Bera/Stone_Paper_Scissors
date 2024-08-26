@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #8cc461;
+}
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 30px;
+  left: 250px;
+  font-family: "Roboto", sans-serif;
+  width: 53%;
+  height: 16%;
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.topLeft {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+.topRight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topRight span {
+  height: 80%;
+  width: 35%;
+  background-color: white;
+  font-size: 0.8 rem;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+  text-align: center;
+  line-height: 1.4rem;
+  color: #656565;
+  font-weight: 600;
+}
+.topRight span p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+#btn {
+  width: 8%;
+  height: 5%;
+  border: 2px solid white;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  text-align: center;
+  border-radius: 7px;
+  background: transparent;
+  color: white;
+}
+
+.rules {
+  position: absolute;
+  right: 0px;
+  top: 220px;
+  height: 50%;
+  width: 18%;
+}
+#cross {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  background: transparent;
+  border: none;
+  top: 227px;
+  right: 1px;
+  z-index: 1;
+  border-radius: 50%;
+}
+.lowerPart {
+  width: 30%;
+  height: 50%;
+  /* border: 2px solid red; */
+  position: fixed;
+  right: 40%;
+  top: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lowerPart button {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 5px 25px 15px 25px;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+
+#scissorsImg {
+  height: 2.4rem;
+  width: 1.9rem;
+}
+#paperImg {
+  height: 3rem;
+  width: 3rem;
+}
+#stoneImg {
+  height: 2.4rem;
+  width: 2.9rem;
+}
+.btnPaper {
+  border: 14px solid #ffa943;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.btnStone {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border: 14px solid #0074b6;
+}
+.btnScissor {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border: 14px solid #bd00ff;
+}
+#straightLine,
+#leftLine,
+#rightLine {
+  transform: scale(0.8);
+  position: absolute;
+}
+
+#straightLine {
+  top: 280px;
+  left: 500px;
+}
+#rightLine {
+  top: 310px;
+  left: 600px;
+}
+#leftLine {
+  top: 310px;
+  left: 480px;
+}

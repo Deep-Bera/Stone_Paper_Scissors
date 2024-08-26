@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Won</title>
+    <link rel="stylesheet" href="cpuWin.css" />
+  </head>
+  <body>
+    <div class="topSection">
+      <div class="topLeft">
+        <p>STONE</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+      <div class="topRight">
+        <span
+          >COMPUTER SCORE
+          <p id="cpuWinComp">0</p></span
+        >
+        <span
+          >YOUR SCORE
+          <p id="cpuWinUser">0</p></span
+        >
+      </div>
+    </div>
+    <button id="btnRules" onclick="showRules()">Rules</button>
+    <button id="cross" onclick="hideRules()"></button>
+    <!-- <button id="btnNext">Next</button> -->
+    <img src="Img/Group 4.png" class="rules" id="imgRules" alt="" />
+    <div class="pulse">
+      <img src="Img/Ellipse 3.png" id="pulse1" alt="" />
+      <img src="Img/Ellipse 4.png" id="pulse2" alt="" />
+      <img src="Img/Ellipse 8.png" id="pulse3" alt="" />
+    </div>
+    <div class="container">
+      <div class="class1">
+        <h1>You Picked</h1>
+        <button class="btnScissor" id="btnUserChoose">
+          <img src="Img/scissors.png" id="userChoose" alt="" />
+        </button>
+      </div>
+      <div class="class2">
+        <h1 id="first">YOU LOST</h1>
+        <h1 id="second">AGAINST PC</h1>
+        <p>
+          <button class="playAgain" onclick="openNewPage()">PLAY AGAIN</button>
+        </p>
+      </div>
+      <div class="class3">
+        <h1>PC Picked</h1>
+        <button class="btnStone" id="btnCompChoose">
+          <img src="Img/stone.png" id="compChoose" />
+        </button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("cpuWinUser").innerText =
+          sessionStorage.getItem("userScore");
+        document.getElementById("cpuWinComp").innerText =
+          sessionStorage.getItem("compScore");
+      });
+    </script>
+    <script src="playerWin.js"></script>
+  </body>
+</html>
